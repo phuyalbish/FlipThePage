@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turm Palaa</title>
+
+    <script type="text/javascript">
+
+        const creatingMenuItems = (name) => {
+      var divElem = document.createElement("div");
+      divElem.style.background = "url('images/"+name+".png')";
+      divElem.style.backgroundSize = "cover";
+      return liElement;
+    };
+
+    const menu = document.querySelector("#album");
+      for (var i = 1; i <= 10; i++) {
+            menu.appendChild(creatingMenuItems(i));
+      }
+    </script>
+  </head>
+  <style type="text/css">
+    body {
+      overflow: hidden;
+      background-color: blueviolet;
+      background-size: 100% 100%;
+    }
+    #album {
+        width:850px;
+        height:550px;
+        margin:5% auto;
+    }
+  </style>
+  <body>
+    <div id="album">
+    <div style=" background: url('images/1.jpg'); background-size:100% 100%;"/></div>
+    <div style=" background: url('images/2.jpg'); background-size:100% 100%;"/></div>
+    <div style=" background: url('images/3.jpg'); background-size:100% 100%;"/></div>
+    <div style=" background: url('images/4.jpg'); background-size:100% 100%;"/></div>
+    <div style=" background: url('images/5.jpg'); background-size:100% 100%;"/></div>
+    <div style=" background: url('images/6.jpg'); background-size:100% 100%;"/></div>
+    <div style=" background: url('images/7.jpg'); background-size:100% 100%;"/></div>
+    <div style=" background: url('images/8.jpg'); background-size:100% 100%;"/></div>
+    <div style=" background: url('images/9.jpg'); background-size:100% 100%;"/></div>
+    <div style=" background: url('images/10.jpg'); background-size:100% 100%;"/></div>
+    <div style=" background: url('images/11.jpg'); background-size:100% 100%;"/></div>
+    <div style=" background: url('images/12.jpg'); background-size:100% 100%;"/></div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="turn.js"></script>
+    <script>
+
+      $('#album').turn({gradients: true, acceleration: true});
+    </script>
+  </body>
+</html>
